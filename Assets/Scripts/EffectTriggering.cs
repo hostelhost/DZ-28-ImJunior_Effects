@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class AudioEffect : MonoBehaviour
+public class EffectTriggering : MonoBehaviour
 {
-    [SerializeField] private AudioClip[] _audioClips;
+    [SerializeField] private ParticleSystem _effectPrefab;
     [SerializeField] private RaycastHitEmitter _raycastHitEmitter;
 
     private void OnEnable()
@@ -17,7 +17,7 @@ public class AudioEffect : MonoBehaviour
 
     private void PlayEffect(RaycastHit hit)
     {
-        if (_audioClips.Length > 0)
-            AudioSource.PlayClipAtPoint(_audioClips[Random.Range(0, _audioClips.Length)], hit.point);
+        ParticleSystem newEffect = Instantiate(_effectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+        newEffect.Play();
     }
 }

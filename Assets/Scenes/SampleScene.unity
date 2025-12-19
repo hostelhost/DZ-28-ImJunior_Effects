@@ -495,7 +495,6 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
-  - component: {fileID: 330585549}
   - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
@@ -637,29 +636,6 @@ MonoBehaviour:
   _firstCamera: {fileID: 330585545}
   _effectPrefab: {fileID: 6556109563455869899, guid: f24b6d9ad8df6f4439a429b12330a8ac, type: 3}
   _distance: 100
---- !u!114 &330585549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea28717b450dc0488af52f70654b959, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioEffect
-  _audioClips:
-  - {fileID: 8300000, guid: c248772cd1ea9d54eaf49e04c68340cd, type: 3}
-  - {fileID: 8300000, guid: 63224239a0ee6564caf23dba581eab69, type: 3}
-  - {fileID: 8300000, guid: 11b374a97661e8645a139ba3cf26e69a, type: 3}
-  - {fileID: 8300000, guid: 76c187da962255d45b0409c7c746e1ff, type: 3}
-  - {fileID: 8300000, guid: ff47e06032063e340987958ea0cc7d16, type: 3}
-  - {fileID: 8300000, guid: 1edb15636e0cfc94a88cf080f0cf9307, type: 3}
-  - {fileID: 8300000, guid: cf9710ca2cc33a9488682b6f5739a11e, type: 3}
-  - {fileID: 8300000, guid: 25a49fc951ee21543963f4440eb1d6cc, type: 3}
-  - {fileID: 8300000, guid: f68dd74f955b4eb49ada89ced54cc75e, type: 3}
-  _damageAnimator: {fileID: 330585548}
 --- !u!1 &374577025
 GameObject:
   m_ObjectHideFlags: 0
